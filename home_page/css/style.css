@@ -20,10 +20,6 @@ body {
   background-color: #fafafa;
 }
 
-/* body {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-} */
-
 /* header */
 
 .header {
@@ -362,135 +358,153 @@ h4 {
   gap: 1.5rem;
 }
 
-/* footer */
+/* Footer */
 
-.footer {
-  margin-top: 35rem;
+footer {
+  margin-top: 20rem;
 }
 
-.footer__container {
+.both {
   display: flex;
 }
-
-.left__side {
-  display: flex;
-  padding-left: 20rem;
-  flex-direction: column;
-  background-color: #304f95;
-  width: 50vw;
+.one__side {
+  width: 50%;
+  background-color: #234dae;
+  padding-left: 12rem;
 }
 
-.header__footer {
+.footer__heading {
   font-family: Poppins;
   font-size: 4.2rem;
   color: #ffffff;
 }
 
-.apps {
-  display: flex;
-  gap: 3rem;
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 6rem;
-}
-
 .form__one {
   padding-top: 8rem;
+  position: relative;
 }
 
 .form__two {
   padding-top: 3rem;
+  position: relative;
 }
 
 .input {
-  color: #ffffff;
-  background-color: #304f95;
-  font-family: Poppins;
-  font-size: 1.8rem;
   border: none;
-  border-bottom: 1px solid #ebeff2;
-  max-width: 50rem;
+  background-color: #234dae;
+  border-bottom: 2px solid #fff;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  width: 70%;
+  height: 5.4rem;
+  display: block;
+  padding-left: 4.6rem;
 }
 
-.svg__phone {
-  display: flex;
+::placeholder {
+  font-family: Poppins;
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
 .input:focus {
   outline: none;
 }
 
-.button__three {
+.svg__contact,
+.svg__phone {
+  width: 2.2rem;
+  height: 2.2rem;
+  position: absolute;
+}
+
+.svg__contact {
+  top: 70%;
+  left: 0;
+}
+
+.svg__phone {
+  top: 50%;
+  left: 0;
+}
+
+.third__button {
   font-family: Poppins;
   font-size: 2rem;
-  width: 208px;
-  height: 56px;
+  width: 26.4rem;
+  height: 6.4rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   background-color: #ffffff;
-  color: #304f95;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  color: #234dae;
+  margin-top: 4.8rem;
+  margin-bottom: 7.8rem;
+}
+
+.apps {
+  display: flex;
+  gap: 3.2rem;
+  font-family: Poppins;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .rights {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  margin-top: 6.4rem;
   color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 5.5rem;
 }
 
-.right__side {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  width: 50vw;
-  padding-left: 12rem;
-}
-
-.contact__us {
+.footer__heading--second {
+  font-family: Poppins;
   font-size: 4.2rem;
   color: #343b43;
-  font-family: Poppins;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .blue__text {
   color: #304f95;
   font-family: Poppins;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.text {
+.gmail {
+  margin-bottom: 3rem;
+}
+
+.black__text {
   font-family: Poppins;
   font-size: 2.4rem;
 }
 
-.useful__links {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.second__side {
+  padding-left: 12rem;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.useful {
   font-family: Poppins;
   font-size: 4.2rem;
   color: #343b43;
+  margin-top: 6rem;
 }
 
-.about__us {
+.flexbox {
   display: flex;
-  flex-direction: row;
-  gap: 12rem;
+  margin-top: 2.4rem;
 }
 
-.left__footer {
-  display: flex;
-  flex-direction: column;
+.left {
+  margin-right: 12rem;
 }
 
-.right__footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.text--footer {
+.left,
+.right {
   font-family: Poppins;
   font-size: 1.8rem;
 }
