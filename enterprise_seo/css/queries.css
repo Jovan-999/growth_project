@@ -1,0 +1,146 @@
+@media (max-width: 75em) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .primary__heading {
+    max-width: 100%;
+  }
+
+  .main__area {
+    display: grid;
+    grid-template-areas:
+      'title title'
+      'text img';
+  }
+
+  .primary__description,
+  .primary__text {
+    max-width: 100%;
+    margin: 3rem 0 0 0;
+  }
+}
+
+@media (min-width: 75em) {
+  .main__area {
+    display: grid;
+    grid-template:
+      'title img'
+      'text img';
+    align-items: center;
+  }
+}
+
+@media (max-width: 68em) {
+  .grid__area {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .plan__box,
+  .monitoring__box,
+  .mail__box,
+  .analysis__box,
+  .audits__box,
+  .location__box {
+    margin: 0;
+  }
+
+  .box__text {
+    max-width: 100%;
+  }
+  .marketing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15rem auto;
+  }
+
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #304f95;
+    color: #ffffff;
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .main__nav--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+
+  .button {
+    margin: 2rem 0 0 0;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  .both {
+    display: flex;
+    flex-direction: column;
+  }
+  .one__side,
+  .second__side {
+    width: 100%;
+  }
+
+  .second__side,
+  .one__side {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .last__area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left__side--second {
+    margin: 0;
+  }
+
+  .last__text {
+    max-width: 100%;
+  }
+
+  .apps {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 50em) {
+  .main__area {
+    display: grid;
+    grid-template-areas: 'title' 'img' 'text';
+  }
+
+  .primary__description,
+  .primary__text {
+    max-width: 100%;
+    margin: 3rem 0 0 0;
+  }
+}
