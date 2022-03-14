@@ -1,0 +1,157 @@
+@media (min-width: 50em) {
+  .main__area {
+    display: grid;
+    grid-template:
+      'title img'
+      'text img'
+      'buttons img';
+  }
+
+  .losing__money {
+    display: grid;
+    grid-template: 'img text';
+    align-items: center;
+  }
+  .optimization__box {
+    display: grid;
+    grid-template: 'img text';
+    align-items: center;
+  }
+}
+
+@media (max-width: 68.5em) {
+  .text__box {
+    margin-right: 0;
+  }
+
+  .google__heading {
+    font-size: 3.2rem;
+  }
+
+  .left__side--second {
+    margin-right: 5rem;
+  }
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #304f95;
+    color: #ffffff;
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .main__nav--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+
+  .button {
+    margin: 2rem 0 0 0;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  .both {
+    display: flex;
+    flex-direction: column;
+  }
+  .one__side,
+  .second__side {
+    width: 100%;
+  }
+
+  .second__side,
+  .one__side {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 63em) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .primary__heading {
+    max-width: 100%;
+  }
+
+  .main__area {
+    display: grid;
+    grid-template-areas:
+      'title title'
+      'text img'
+      'buttons img';
+  }
+
+  .right__side {
+    margin: 0;
+  }
+
+  .primary__text {
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .main__area {
+    display: grid;
+    grid-template-areas: 'title' 'img' 'text';
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .primary__button,
+  .primary__button--second {
+    font-size: 1.6rem;
+    width: 50%;
+    padding: 0 2rem;
+  }
+
+  .google__ads {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .google__button {
+    width: 100%;
+  }
+
+  .money__button {
+    width: 100%;
+  }
+
+  .last__area {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 32em) {
+  .apps {
+    display: flex;
+    flex-direction: column;
+  }
+}
