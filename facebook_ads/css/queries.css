@@ -1,0 +1,183 @@
+@media (min-width: 50em) {
+  .main__area {
+    display: grid;
+    grid-template:
+      'title img'
+      'text img';
+  }
+  .second__box {
+    display: grid;
+    grid-template:
+      'title title'
+      'img text';
+    align-items: center;
+  }
+
+  .third__box {
+    display: grid;
+    grid-template:
+      'img title'
+      'img text';
+    align-items: center;
+  }
+}
+
+@media (max-width: 68.5em) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .main__area {
+    display: grid;
+    grid-template:
+      'title title'
+      'text img';
+    align-items: center;
+  }
+
+  .primary__heading {
+    margin-top: 5rem;
+  }
+
+  .facebook__button {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .right__side {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .facebook__button {
+    margin-bottom: 5rem;
+  }
+  .pgs,
+  .doxy,
+  .funnels {
+    width: auto;
+    height: 3.1rem;
+    margin-right: 4rem;
+  }
+
+  .nerd {
+    width: auto;
+    height: 3.1rem;
+  }
+
+  .secondary__image,
+  .third__image {
+    margin-right: 5rem;
+  }
+
+  label #btn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #304f95;
+    color: #ffffff;
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .main__nav--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+
+  .button {
+    margin: 2rem 0 0 0;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  .second__heading {
+    margin: 0;
+  }
+
+  .foundry__fb--ads {
+    margin-bottom: 5rem;
+  }
+
+  .both {
+    display: flex;
+    flex-direction: column;
+  }
+  .one__side,
+  .second__side {
+    width: 100%;
+  }
+
+  .second__side,
+  .one__side {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .first__box {
+    display: grid;
+    grid-template: 'title' 'img' 'text';
+  }
+
+  .second__box {
+    display: grid;
+    grid-template: 'title' 'img' 'text';
+  }
+
+  .second__text {
+    margin-left: 0;
+  }
+
+  .third__box {
+    display: grid;
+    grid-template: 'title' 'img' 'text';
+  }
+
+  .flex__box {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 50em) {
+  .primary__heading,
+  .first__heading,
+  .second__heading,
+  .third__heading,
+  .foundry__fb--ads {
+    font-size: 3.2rem;
+  }
+
+  .main__area {
+    display: grid;
+    grid-template: 'title' 'img' 'text';
+  }
+}
+
+@media (max-width: 32em) {
+  .apps {
+    display: flex;
+    flex-direction: column;
+  }
+}
